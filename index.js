@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import inquirer from "inquirer";
+import chalk from "chalk";
+console.log(chalk.yellow("Welcome to Hina alvi currency converter! "));
 const Currency = {
     USD: 1,
     EUR: 0.91,
@@ -31,3 +33,4 @@ let Amount = user_answer.Amount;
 let baseAmount = Amount / fromAmount;
 let convertedAmount = baseAmount * toAmount;
 console.log(convertedAmount);
+console.log(chalk.blue("Thank you for using my app!"));
